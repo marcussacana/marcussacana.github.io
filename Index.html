@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="pt">
+	<head>
+		<meta charset="utf-8">
+		<title>Marcus André</title>
+		<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css"></link>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+		<script src="https://unpkg.com/@codersrank/skills-chart@x.x.x/codersrank-skills-chart.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script src="./js/bootstrap.bundle.min.js"></script>
+		<style type="text/css">
+			:root {
+				--bs-primary: #6610f2;
+				--bs-primary-rgb: 102, 16, 242;
+				
+				--bs-secondary: #9010f2;
+				--bs-secondary-rgb: 144, 16, 242;
+			}
+			.gradient-primary {
+				background: #6610f2;
+
+				background: rgb(var(--bs-primary-rgb));
+				background: linear-gradient(180deg, rgba(var(--bs-primary-rgb),1) 35%, rgba(var(--bs-secondary-rgb),1) 100%);
+			}
+			.gradient-secondary {
+				background: #6610f2;
+
+				background: rgb(var(--bs-primary-rgb));
+				background: linear-gradient(180deg, rgba(var(--bs-secondary-rgb),1) 35%, rgba(var(--bs-primary-rgb),1) 100%);
+			}
+			body {
+				background: var(--bs-primary);
+				position: relative;
+			}
+		</style>
+	</head>
+	<body>
+		<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary" id="navbar">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand ms-2" href="#">Marcus André</a>
+					<button id="toggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Ver/Ocultar Menu">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="nav navbar-nav">
+						<li class="nav-item nav-link active" href="#sobre">Sobre</li>
+						<li class="nav-item nav-link" href="#exp">Experiência</li>
+						<li class="nav-item nav-link" href="#proj">Projetos</li>
+						<li class="nav-item nav-link" href="#cont">Contato</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div data-spy="scroll" data-target="#navbar" data-offset="0">
+			<div class="container-fluid mt-5 bg-primary text-light">
+				<h1 class="text-center" id="sobre" href="#sobre">Sobre</h1>
+				<div class="container" style="max-width: 700px; font-size: large; text-align: justify;">
+					<p class="mb-0">Sou um desenvolvedor em código aberto desde julho de 2015, e desde então venho aprimorando e expandindo minhas experiências técnicas ao redor das tecnologias do .Net; Como hobista dei grande foco a área de modding, passatempo este que resultou em aprofundamento constante na estrutura de dados binários. Ao longo dos anos venho ativamente contribuindo para com a comunidade de código aberto, publicando softwares gratuitos de domínio público. Apesar de meus projetos serem em sua grande maioria feitos em C#, que depende do .NET, me familiarizei com o mono, podendo então desenvolver ferramentas com interfaces baseada em GTK+ 2 com suporte a Linux/Windows.</p>
+				</div>
+			</div>
+			
+			<div class="container-fluid gradient-primary" style="height: 20px;"></div>
+			<div class="container-fluid bg-secondary text-light">
+				<h1 class="text-center" id="exp" href="#exp">Experiência</h1>
+				<p class="text-center text-light user-select-none">Esse gráfico é gerado automáticamente pela Codersrank tomando como referencia o histórico do desenvolvedor no github</p>
+				<codersrank-skills-chart username="marcussacana" labels=true legend=true tooltip=true svg-height=200></codersrank-skills-chart>
+			</div>
+			
+			<div class="container-fluid gradient-secondary" style="height: 20px;"></div>
+			<div class="container-fluid bg-primary text-light">
+				<h1 class="text-center" id="proj" href="#proj">Projetos</h1>
+				<p class="text-center">A seguir alguns destaques de projetos variados que desenvolvi ao longo dos anos.</p>
+				<div class="container text-dark">
+					<div class="row">
+						<div class="col">
+							<div class="card">
+							  <div class="card-body">
+								<h5 class="card-title">DriveMirror</h5>
+								<p class="card-text">Utilitário para criar espelhos no google drive de forma recursiva nas suas pastas do Google Drive sem necessidade de reenviar seus arquivos.<br>Suporte a Linux e Windows.</p>
+								<a href="https://github.com/marcussacana/DriveMirror" class="btn btn-primary" target="_blank">Ver Projeto</a>
+							  </div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card">
+							  <div class="card-body">
+								<h5 class="card-title">RemoteControl</h5>
+								<p class="card-text">Biblioteca que permite interação entre processos, permitindo a chamada de funções com retorno, leitura e escrita de memória e interceptação das chamadas para a API nativa do sistema.</p>
+								<a href="http://github.com/marcussacana/RemoteControl" class="btn btn-primary" target="_blank">Ver Projeto</a>
+							  </div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card">
+							  <div class="card-body">
+								<h5 class="card-title">UnixAPI</h5>
+								<p class="card-text">Uma biblioteca para WINE que expõe o sistema unix para os aplicativos de Windows, permitindo contornos de compatíbilidade com maior liberdade.<br>Suporte exclusivo a Linux.</p>
+								<a href="https://github.com/marcussacana/UnixAPI" class="btn btn-primary" target="_blank">Ver Projeto</a>
+							  </div>
+							</div>
+						</div>
+					</div>
+					<div class="row pt-4 pb-4">
+						<div class="col">
+							<div class="card">
+							  <div class="card-body">
+								<h5 class="card-title">BlazorSiginTool</h5>
+								<p class="card-text">Uma ferramenta capaz de atualizar as somas de verificações de aplicativos Blazor sem a necessidade de recompilar seu projeto blazor.<br>Extremamente útil em casos de hotfixes na ausência de uma IDE capaz de compilar seu projeto blazor, tornando a edição de seu aplicativo mais portátil.</p>
+								<a href="https://github.com/marcussacana/BlazorSiginTool" class="btn btn-primary" target="_blank">Ver Projeto</a>
+							  </div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card">
+							  <div class="card-body">
+								<h5 class="card-title">Sermone</h5>
+								<p class="card-text">O Sermone é uma ferramenta CAT em desenvolvimento que auxilia o processo de tradução de jogos, tendo filtro de textos, backups automáticos, comparações entre traduções, etc. Pode ser executado em seu navegador, e conta com um sistema de plugin suportando diferentes formatos.</p>
+								<a href="https://github.com/marcussacana/Sermone" class="btn btn-primary" target="_blank">Ver Projeto</a>
+								<a href="https://marcussacana.github.io/Sermone/" class="btn btn-secondary" target="_blank">Testar</a>
+							  </div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card">
+							  <div class="card-body">
+								<h5 class="card-title">EXSearch</h5>
+								<p class="card-text">Uma ferramenta simples mas eficaz que analisa padrões repetitivos em exemplares de textos, podendo então gerar uma máscara de pesquisa binária capaz de encontrar o referido texto em arquivos com uma codificação própria ou com criptografias mais simples.</p>
+								<a href="https://github.com/marcussacana/EXSearch" class="btn btn-primary" target="_blank">Ver Projeto</a>
+							  </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid gradient-primary" style="height: 20px;"></div>
+			<div class="container-fluid bg-secondary text-light">
+				<h1 class="text-center" id="cont" href="#cont">Contatos</h1>
+				<div class="container" style="max-width: 65vw;">
+					<div class="row">
+						<div class="col">
+							<div class="d-flex align-items-center">
+								<object class="mb-1" data="./svg/call_24.svg" width="24" height="24"></object>
+								<p class="px-2 mt-1 pt-1">(21) 9 8159-4368</p>
+							</div>
+						</div>
+						<div class="col">
+							<div class="d-flex align-items-center">
+								<object class="mb-1" data="./svg/email_24.svg" width="24" height="24"></object>
+								<p class="px-2 mt-1 pt-1">marcus.1999.andre@gmail.com</p>
+							</div>
+						</div>
+						<div class="col">
+							<div class="d-flex align-items-center">
+								<object class="mb-1" data="./svg/whatsapp_24.svg" width="24" height="24"></object>
+								<p class="px-2 mt-1 pt-1">(21) 9 8159-4368</p>
+							</div>
+						</div>
+						<div class="col">
+							<div class="d-flex align-items-center">
+								<object class="mb-1" data="./svg/discord_24.svg" width="24" height="24"></object>
+								<p class="px-2 mt-1 pt-1">Marcus André#0956</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid gradient-secondary" style="height: 20px;"></div>
+		</div>
+		<script>
+			var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+			  target: '#navbar'
+			});
+		</script>
+	</body>
+</html>
